@@ -1,0 +1,28 @@
+
+
+.navbar {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-around;
+    
+}
+
+.navDiv{
+    position: relative;
+   
+}
+
+.itemsIcon {
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+}
+
+.itemsDiv{
+    background-color: white;
+    color: red;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
