@@ -1,4 +1,6 @@
-
+.App {
+    
+}
 
 .navbar {
     display: flex;
@@ -34,4 +36,49 @@ body {
     border-radius: 50%;
     text-align: center;
     
+}
+
+.img {
+    height: 400px;
+}
+
+.cart {
+    text-align: center;
+}
+
+.clear {
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(44, 50, 207);
+    color: white;
+}
+
+.techItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 150px;
+}
+
+.techInfo {
+    text-align: right;
+}
+
+.techButton {
+    border: none;
+    background-color: aqua;
+}
+
+.techquantity{
+    margin-right: 10px;
+}
+
+.techDelete {
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(221, 28, 50);
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }

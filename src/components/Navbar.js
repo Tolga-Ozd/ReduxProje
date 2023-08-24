@@ -5,13 +5,12 @@ import { useSelector } from 'react-redux';
 
 const Navbar = () => {
 
-    const {quantity} = useSelector((store)=>store.cart)
+  const {quantity} = useSelector((store)=>store.cart)
 
   return (
     <nav>
         <div className='navbar'>
             <h3> Alışveriş Uygulaması</h3>
-       
             <div className='navDiv'>
                <div className='itemsDiv'>
                 <p>{quantity}</p>

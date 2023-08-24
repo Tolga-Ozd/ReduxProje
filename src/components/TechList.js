@@ -5,24 +5,24 @@ import { useSelector } from 'react-redux'
 
 const TechList = () => {
 
-    const {cartItems,quantity , total } = useSelector((store)=>store.cart)
+    const {cartItems ,quantity , total } = useSelector((store)=>store.cart)
 
   return (
     <div>
         { quantity < 1 ? (
-            <section>
+            <section className='cart'>
                 <header>
                     <h3>Ürün sepetiniz boş</h3>
                     </header>
             </section>           
         ) : (
-            <section>
+            <section className='cart'>
                 <header>
                     <h3>Sepetim</h3>
                 </header>
                 <div>
                     {techItems.map((item) => {
-                        return <TechItem {...item} />
+                        return <TechItem key={item.id} {...item} />
                     })}
                 </div>
                 <footer>
@@ -31,7 +31,7 @@ const TechList = () => {
                         <h4>Toplam tutar <span> {total} ₺ </span> </h4>
                     </div>
                 </footer>
-                <button>Temizle</button>
+                <button className='clear'>Temizle</button>
             </section> 
         )}
 

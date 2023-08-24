@@ -3,24 +3,23 @@ import {BsChevronUp , BsChevronDown} from "react-icons/bs";
 
 function TechItem ({id , title , price , img, quantity}) {
   return (
-    <div >
-        <img src={img} alt="" />
+    <div className='techItem'>
+        <img src={img} alt="" className='img' />
         
-        <div>
+        <div className='techInfo'> 
             <h4>{title}</h4>
             <h4>{price} ₺</h4>
             <div>
-                <button>
+                <button className='techButton'>
                     <BsChevronUp />     
                 </button>
-                <p>{quantity}</p>
-                <button>
+                <p className='techquantity'>{quantity}</p>
+                <button className='techButton'>
                     <BsChevronDown />
                 </button>
             </div> 
+            <button className='techDelete'>Sil</button>
         </div>
-
-        <button>Sil</button>
     </div>
   )
 }
