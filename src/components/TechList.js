@@ -14,7 +14,7 @@ function TechList() {
         { quantity < 1 ? (
             <section className='carttt'>
                 <header>
-                    <h3>Ürün sepetiniz boş</h3>
+                    <h3 className='empty'>Ürün sepetiniz boş!</h3>
                     </header>
             </section>           
         ) : (

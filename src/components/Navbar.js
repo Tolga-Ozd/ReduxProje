@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav>
         <div className='navbar'>
-            <h3> Alışveriş Uygulaması</h3>
+            <h1> Alışveriş Uygulaması</h1>
             <div className='navDiv'>
                <div className='itemsDiv'>
                 <p>{quantity}</p>

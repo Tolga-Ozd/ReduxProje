@@ -6,7 +6,8 @@
     display: flex;
     background-color: aquamarine;
     justify-content: space-around;
-    
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navDiv{
@@ -25,8 +26,7 @@ body {
 
 .itemsIcon {
     position: absolute;
-    bottom: 10px;
-    left: 2px;
+    bottom: 15px;
 }
 
 .itemsDiv{
@@ -83,6 +83,11 @@ body {
     border: none;
     background-color: aqua;
     cursor: pointer;
+}
+
+.empty{
+    color: red;
+    font-size: 24px;
 }
 
 .techquantity{
