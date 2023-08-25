@@ -1,7 +1,12 @@
 import React from 'react'
 import {BsChevronUp , BsChevronDown} from "react-icons/bs";
+import { useDispatch } from 'react-redux'
+import { removeItem } from '../control/cartSlice';
 
 function TechItem ({id , title , price , img, quantity}) {
+
+const dispatch = useDispatch();
+    
   return (
     <div className='techItem'>
         <img src={img} alt="" className='img' />
@@ -18,7 +23,9 @@ function TechItem ({id , title , price , img, quantity}) {
                     <BsChevronDown />
                 </button>
             </div> 
-            <button className='techDelete'>Sil</button>
+            <button className='techDelete' 
+            onClick={() =>dispatch(removeItem(id))}
+            >Sil</button>
         </div>
     </div>
   )

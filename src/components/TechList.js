@@ -38,7 +38,6 @@ function TechList() {
                 >Temizle</button>
             </section> 
         )}
-
     </div>
   )
 }
