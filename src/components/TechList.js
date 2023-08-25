@@ -30,7 +30,8 @@ function TechList() {
                 <footer>
                     <hr />
                     <div>
-                        <h4>Toplam tutar <span> {total} ₺ </span> </h4>
+                        <h2>Toplam tutar <span> {total} ₺ </span> </h2>
+                        <h3>Sepetiniz boş </h3>
                     </div>
                 </footer>
                 <button className='clear'
