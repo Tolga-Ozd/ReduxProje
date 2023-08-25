@@ -42,7 +42,7 @@ body {
     height: 400px;
 }
 
-.cart {
+.carttt {
     text-align: center;
 }
 
@@ -52,6 +52,12 @@ body {
     border-radius: 30px;
     background-color: rgb(44, 50, 207);
     color: white;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.clear:hover{
+    opacity: 0.9;
 }
 
 .techItem {
@@ -60,8 +66,15 @@ body {
     margin: 50px 150px;
 }
 
+.baslık{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: red;
+}
+
 .techInfo {
     text-align: right;
+    margin-right: 100px;
 }
 
 .techButton {
@@ -80,5 +93,8 @@ body {
     background-color: rgb(221, 28, 50);
     color: white;
     margin-top: 30px;
-    margin-bottom: 50px;
+    cursor: pointer;
+}
+.techDelete:hover{
+    opacity: 0.85;
 }

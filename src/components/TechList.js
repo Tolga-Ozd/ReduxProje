@@ -1,27 +1,29 @@
 import React from 'react'
 import TechItem from './TechItem'
-import techItems from '../techItems'
-import { useSelector } from 'react-redux'
+// import techItems from '../techItems'
+import { useDispatch, useSelector } from 'react-redux'
+import { clearCart } from '../control/cartSlice'
 
-const TechList = () => {
+function TechList() {
 
+    const dispatch = useDispatch();
     const {cartItems ,quantity , total } = useSelector((store)=>store.cart)
 
   return (
     <div>
         { quantity < 1 ? (
-            <section className='cart'>
+            <section className='carttt'>
                 <header>
                     <h3>Ürün sepetiniz boş</h3>
                     </header>
             </section>           
         ) : (
-            <section className='cart'>
+            <section className='carttt'>
                 <header>
-                    <h3>Sepetim</h3>
+                    <h1 className='baslık'>Ürün Sepetim</h1>
                 </header>
                 <div>
-                    {techItems.map((item) => {
+                    {cartItems.map((item) => {
                         return <TechItem key={item.id} {...item} />
                     })}
                 </div>
@@ -31,7 +33,9 @@ const TechList = () => {
                         <h4>Toplam tutar <span> {total} ₺ </span> </h4>
                     </div>
                 </footer>
-                <button className='clear'>Temizle</button>
+                <button className='clear'
+                onClick={() => dispatch(clearCart())}
+                >Temizle</button>
             </section> 
         )}
 
