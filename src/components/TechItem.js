@@ -12,18 +12,18 @@ const dispatch = useDispatch();
         <img src={img} alt="" className='img' />
         
         <div className='techInfo'> 
-            <h4>{title}</h4>
-            <h4>{price} ₺</h4>
+            <h4 className='techTitle'>{title}</h4>
+            <h4 className='iiii'>{price} ₺</h4>
             <div>
-                <button className='techButton' onClick={()=>{dispatch(increase(id))}} > 
+                <button className='techButton iiii' onClick={()=>{dispatch(increase(id))}} > 
                     <BsChevronUp />     
                 </button>
-                <p className='techquantity'>{quantity}</p>
-                <button className='techButton' onClick={()=>{dispatch(decrease(id))}}>
+                <p className='techquantity iiii'>{quantity}</p>
+                <button className='techButton iiii' onClick={()=>{dispatch(decrease(id))}}>
                     <BsChevronDown />
                 </button>
             </div> 
-            <button className='techDelete' 
+            <button className='techDelete iiii' 
             onClick={() =>dispatch(removeItem(id))}
             >Sil</button>
         </div>

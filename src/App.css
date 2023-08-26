@@ -55,6 +55,10 @@ body {
     margin-bottom: 50px;
     cursor: pointer;
 }
+.techTitle{
+    color: red;
+    font-size: 18px;
+}
 
 .clear:hover{
     opacity: 0.9;
@@ -92,6 +96,12 @@ body {
 
 .techquantity{
     margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.iiii{
+    margin-right: 50px;
 }
 
 .techDelete {
@@ -123,14 +133,30 @@ body {
       height: 300px;
     }
   
-    .techInfo {
-      text-align: center; /* Metinlerin ortalanması */
-      margin-right: 0; /* Özel margin'i kaldırma */
-    }
-  
+   
     .techButton {
-      margin-top: 10px; /* Artırma ve azaltma düğmeleri arasındaki boşluk */
+    padding: 5px;
+      margin:0 20px;
+      align-items: center; 
+      cursor: pointer;
     }
+    .techquantity{
+        margin-right: 30px;
+    }
+
+    .techInfo {
+      display: flex;
+      align-items: center;
+    }
+    .techDelete {
+        border: none;
+        border-radius: 30px;
+        background-color: rgb(221, 28, 50);
+        color: white;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    
   }
   
   @media (max-width: 992px) {
