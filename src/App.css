@@ -147,6 +147,7 @@ body {
     .techInfo {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
     .techDelete {
         border: none;
