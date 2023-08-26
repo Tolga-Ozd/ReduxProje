@@ -106,3 +106,39 @@ body {
 .techDelete:hover{
     opacity: 0.85;
 }
+
+/* Küçük ekranlar için */
+@media (max-width: 768px) {
+    .techItem {
+      
+      flex-direction: column; /* Dikey düzen */
+      align-items: center; /* Orta hizalama */
+      text-align: center; /* Metinlerin ortalanması */
+      border: 1px solid rgb(237, 232, 232); /* Border ekleme */
+      box-shadow: 3px 10px rgb(241, 238, 238); /* Box shadow ekleme */
+    }
+  
+    .img {
+      margin-bottom: 10px; /* Resim ile diğer içerikler arasındaki boşluk */
+      height: 300px;
+    }
+  
+    .techInfo {
+      text-align: center; /* Metinlerin ortalanması */
+      margin-right: 0; /* Özel margin'i kaldırma */
+    }
+  
+    .techButton {
+      margin-top: 10px; /* Artırma ve azaltma düğmeleri arasındaki boşluk */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .techItem {
+      border: none; 
+      box-shadow: none; 
+    }
+     .img{
+        height: 350px;
+     }
+  }
