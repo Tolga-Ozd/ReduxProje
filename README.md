@@ -20,5 +20,5 @@ In this project; <br>
 - useDispatch  <br>
 - Component structure,  <br>
 - useState and <br>
-- React Component <br>
+- React Component used <br>
 
